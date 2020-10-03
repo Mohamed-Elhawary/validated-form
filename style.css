@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    margin: 50px auto;
+    width: 45%;
+    border-radius: 20px;
+    border: 2px solid #B3B2BB;
+    box-shadow: 2px 2px 2px #B3B2BB;
+    overflow: hidden;
+}
+
+.container .details {
+    width: 30%;
+    background-color: #3F3F61;
+}
+
+.container .details div {
+    padding: 15px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #B3B2BB;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container .details div span:first-child {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 10px;
+    border-radius: 50%;
+    background-color: #B3B2BB;
+    padding: 10px;
+}
+
+.container .details div span:last-child {
+    color: #B3B2BB;
+    display: inline-block;
+    margin-left: 10px;
+    line-height: 1.8;
+    font-size: 15px
+}
+
+.container .details div.active span:first-child {
+    background-color: #4EAE3B;
+    color: #fff;
+}
+
+.container .details div.active span:last-child {
+    color: #fff;
+}
+
+/*form*/
+.form {
+    padding: 20px;
+    width: 70%;
+}
+
+.form h2 {
+    font-weight: bold;
+    color: #3F3F61;
+    text-align: center;
+    margin: auto;
+}
+
+.form input:not([type="submit"]):not([type="file"]) {
+    padding: 8px 8px 8px 30px;
+    font-size: 16px;
+    color: #B3B2BB;
+    border-width: 0 0 1px 1px;
+    outline: #B3B2BB;
+}
+
+.form > div {
+    margin: 20px auto;
+    width: 100%;
+    position: relative;
+}
+
+.form .fullname,
+.form .password,
+.form .additional-information,
+.form .gender {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form .fullname .firstname,
+.form .fullname .lastname,
+.form .password .pass,
+.form .password .confirmpass,
+.form .additional-information .tel,
+.form .additional-information .data,
+.form .gender .male,
+.form .gender .female {
+    width: 45%;
+}
+
+.form .email .emailslist{
+    list-style: none;
+    width: 100%;
+    border: 2px solid #3F3F61;
+    border-radius: 10px;
+    margin-top: 2px;
+}
+
+.form .emailslist::before {
+    content: '';
+    border-width: 10px;
+    border-color: transparent transparent #3F3F61;
+    position: absolute;
+    border-style: solid;
+    top: 19%;
+    left: 10%;
+}
+
+.form .emailslist::after {
+    content: '';
+    border-width: 10px;
+    border-color: transparent transparent #fff;
+    position: absolute;
+    border-style: solid;
+    top: 20.3%;
+    left: 10%;
+}
+
+
+.form .email .emailslist li {
+    margin-bottom: 5px;
+    color: #3F3F61;
+    padding: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.form .email .emailslist li:last-child {
+    margin-bottom: 0;
+}
+
+.form .email .emailslist li:hover {
+    background-color: #B3B2BB;
+}
+
+.form .email .emailslist li:first-child {
+    border-radius: 5px 5px 0 0;
+}
+
+.form .email .emailslist li:last-child {
+    border-radius: 0 0 5px 5px;
+}
+
+.form .email .emailslist li.selected {
+    background-color: #3F3F61;
+    color: #fff;
+}
+
+.form .email,
+.form .username {
+    width: 100%;
+}
+.form .fullname .firstname input,
+.form .fullname .lastname input,
+.form .password .pass input,
+.form .password .confirmpass input,
+.form .additional-information .tel input,
+.form .additional-information .data input,
+.form .email input,
+.form .username input {
+    width: 100%
+}
+
+.password .confirmpass .ristrict .fa-eye-slash, .password .pass .ristrict .fa-eye-slash {
+    color: #B3B2BB;
+    cursor: pointer;
+}
+
+.password .confirmpass span.confirmed,
+.password .confirmpass span.unconfirmed {
+    font-size: 15px;
+    margin-top: 5px;
+    display: inline-block;
+    color: #4EAE3B;
+    display: none
+}
+
+.password .confirmpass span.unconfirmed{
+    color: red;
+}
+
+.form .additional-information .data {
+    position: relative;
+}
+
+
+.form .additional-information .data input {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    opacity: 0;
+    z-index: 2;
+}
+
+.form .additional-information .data span:first-child {
+    display: inline-block;
+    padding-top: 30px;
+    overflow-y: auto;
+    word-wrap: break-word;
+    font-size: 16px;
+    color: #B3B2BB;
+}
+
+.form .terms,
+.form .gender {
+    color: #B3B2BB;
+    font-size: 17px;
+}
+
+.form .terms {
+    font-weight: bold;
+}
+
+.form .terms input,
+.form .gender input {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.form .gender label {
+    cursor: pointer;
+}
+
+.form .submit input {
+    width: 30%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #3F3F61;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    border: 1px solid #B3B2BB;
+}
+
+.form .submit input:hover {
+    background-color: #fff;
+    color: #3F3F61;
+}
+
+/*footer*/
+footer {
+	margin: 50px auto;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: #ccc;
+    padding: 5px;
+}
+
+footer p {
+    margin-top: 8px;
+    padding-left: 50px;
+}
+
+footer p span {
+    background-color: black;
+    padding: 2px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/*form errors*/
+.error {
+ color: red;
+ font-size: 15px;
+}
+
+/*responsive*/
+@media (min-width: 100px) and (max-width: 1100px) {
+    .container {
+        width: 97%;
+    };
+   
+}
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>	
+    <meta charset="UTF-8">	
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <title>Validated Form</title>	
+
+    <script>
+    </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="details">
+                <div class="active">
+                    <span>1</span>
+                    <span>Sign Up</span>
+                </div>
+                <div>
+                    <span>2</span>
+                    <span>Connect Bank Account</span>
+                </div>
+                <div>
+                    <span>3</span>
+                    <span>Set Your Money Cash</span>
+                </div>
+            </div>
+
+            <form class="form" autocomplete="off" method="POST" name= 'form' action="form.php">
+                <h2>Sign Up</h2>
+                <div class="fullname">
+                    <div class="firstname">
+                        <i class="far fa-user"></i>
+                        <span class="ristrict">*</span>
+                        <input type="text" name="first_name"  placeholder="First Name" data-type="typing">
+                        <span class="error"></span>
+                    </div>
+    
+                    <div class="lastname">
+                        <i class="far fa-user"></i>
+                        <span class="ristrict">*</span>
+                        <input type="text" name="last_name"  placeholder="Last Name" data-type="typing">
+                        <span class="error"></span>
+                    </div>
+                </div>
+                
+                <div class="username">
+                    <i class="far fa-user"></i>
+                    <span class="ristrict">*</span>
+                    <input type="text" name="user_name" placeholder="User Name" data-type="typing">
+                    <span class="error"></span>
+                </div>
+                
+                <div class="email">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <span class="ristrict">*</span>
+                    <input type="email" name="email" placeholder="Your Email" data-type="typing">
+                    <span class="error"></span>
+                </div>
+               
+                <div class="password">
+                    <div class="pass">
+                        <i class="fas fa-lock"></i>
+                        <span class="ristrict">*</span>
+                        <input type="password" name="password" placeholder="Password" data-type="typing">
+                        <span class="error"></span>
+                    </div>
+    
+                    <div class="confirmpass">
+                        <i class="fas fa-lock"></i>
+                        <span class="ristrict">*</span>
+                        <input type="password" name="confirm_password" placeholder="Confirm Password" data-type="typing">
+                        <span class="confirmation"></span>
+                        <span class="error"></span>
+                    </div>
+                </div>
+                
+                <div class="additional-information">
+                    <div class="tel">
+                        <i class="fas fa-phone-alt"></i>
+                        <input type="tel" name="tel" placeholder="Your Tel. Number" data-type="typing">
+                        <span class="error"></span>
+                    </div>
+                    
+                    <div class="data">
+                        <span>Upload your ID Photo</span>
+                        <span class="ristrict">*</span>
+                        <input type="file" name="file">
+                        <i class='fas fa-upload'></i>
+                    </div>
+                </div>
+                
+                <div class="gender">
+                    <div class="male">
+                        <input type="radio" name="gender" id="male" value="Male" >
+                        <label for="male">Male</label>
+                        <span class="error"></span>
+                    </div>
+                    <div class="female">
+                        <input type="radio" name="gender" id="female" value="Female" >
+                        <label for="female">Female</label>
+                    </div>
+                    
+                </div>
+                
+                <div class="terms">
+                    <input id="check" type="checkbox" name="checkbox"> <label for="check">agree to our </label> <a href="">Terms and Conditions</a>
+                    <span class="error"></span>
+                </div>
+    
+                <div class="submit">
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+
+        <footer>
+            <span>&#64; All Copyrights are reserved 2020</span>
+            <p>Validated by _ <span>HaWaRy</span>_</p>
+        </footer>  
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+  </body>
+</html>
