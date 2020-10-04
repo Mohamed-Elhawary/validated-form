@@ -3,9 +3,9 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1f15ed2a-d969-41c1-a172-4c2dddb197ba/deploy-status)](https://app.netlify.com/sites/validatedform/deploys)
 
   
-![Screenshot](preview1.png)  
-![Screenshot](preview2.png)  
-![Screenshot](preview3.png)  
+![Screenshot](preview_1.png)  
+![Screenshot](preview_2.png)  
+![Screenshot](preview_3.png)  
 
 
 ## Getting Started
