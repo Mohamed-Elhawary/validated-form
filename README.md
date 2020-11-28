@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1f15ed2a-d969-41c1-a172-4c2dddb197ba/deploy-status)](https://app.netlify.com/sites/validatedform/deploys)  
 
-A Validated Secured Form App. using Regex.
+A validated secured form application using regular expressions.
 
   
 ![Screenshot](preview_1.png)  
